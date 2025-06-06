@@ -641,7 +641,7 @@ label.error {
 }
 
 .header-content {
-	margin-left: 17.25%;
+	margin-left: 10%;
 	margin-right: 17.25%;
 	padding-top: 3px;
 }
@@ -1693,7 +1693,7 @@ label.error {
 }
 
 .slide-personal-clients .slide-title-info {
-	margin-bottom: 12.40740741vmin;
+	margin-bottom: 2vmin;
 }
 
 .title-mini {
@@ -1751,7 +1751,7 @@ label.error {
 
 .client-item-title {
 	margin-bottom: .625rem;
-	font-size: 2.125rem;
+	font-size: 1.5rem;
 	font-family: 'MonumentExtended';
 	line-height: .94117647;
 }
