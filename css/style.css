@@ -1707,34 +1707,34 @@ label.error {
 	margin-bottom: 3.375rem;
 }
 
-.icon-partners {
+.icon-chatwithus {
 	display: inline-block;
 	vertical-align: top;
 	width: 3.75rem;
 	height: 3.75rem;
-	background-image: url("../img/icon-partners.png");
+	background-image: url("../img/contact/icon-chat.webp");
 	background-position: 50% 50%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-.icon-project {
+.icon-online {
 	display: inline-block;
 	vertical-align: top;
 	width: 3.75rem;
 	height: 3.75rem;
-	background-image: url("../img/icon-project.png");
+	background-image: url("../img/contact/icon-computer.webp");
 	background-position: 50% 50%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-.icon-worldwide {
+.icon-person {
 	display: inline-block;
 	vertical-align: top;
 	width: 3.75rem;
 	height: 3.75rem;
-	background-image: url("../img/icon-worldwide.png");
+	background-image: url("../img/contact/icon-person.webp");
 	background-position: 50% 50%;
 	background-size: 100%;
 	background-repeat: no-repeat;
