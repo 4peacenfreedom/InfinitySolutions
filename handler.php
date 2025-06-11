@@ -18,6 +18,7 @@ try {
 	$mail_from_name = isset( $_POST['name'] ) ? $_POST['name'] : '';
 	$mail_category = isset( $_POST['category'] ) ? $_POST['category'] : '';
 	$mail_message = isset( $_POST['message'] ) ? $_POST['message'] : '';
+	$mail_phone= isset($_POST['phone']) ? $_POST['phone'] : '';
 
 	// Server settings
 	$mail->isSMTP(); // Send using SMTP
@@ -42,6 +43,7 @@ try {
 	$mail->Body = '
 		<strong>Category:</strong> ' . $mail_category . '<br>
 		<strong>Name:</strong> ' . $mail_from_name . '<br>
+		<strong>Phone:</strong> ' . $mail_phone . '<br>
 		<strong>Email:</strong> ' . $mail_from_email . '<br>
 		<strong>Message:</strong> ' . $mail_message;
 
