@@ -1,0 +1,36 @@
+# Nombre del Workflow que aparecerá en la pestaña "Actions" de GitHub
+name: Deploy to HostGator - cleaninginfinity.com
+
+on:
+  push:
+    branches:
+      - main  # Cambia aquí si tu rama principal tiene otro nombre
+
+jobs:
+  ftp-deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Clona tu repositorio en la máquina virtual de GitHub
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Subida por FTP al servidor de HostGator
+      - name: FTP Deploy Action
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/cleaninginfinity.com/
+          # Opcional: Ignorar archivos/carpetas que no necesitas subir al servidor
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/*.md
+            **/package*.json
+            **/deploy.yml
+            **/.DS_Store
+            # Opcional: Limpiar el directorio de destino antes de subir
+            clean: true 
